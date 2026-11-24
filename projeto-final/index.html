@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organize sua trilha de estudos front-end.">
+  <title>DevStart | Minha trilha de estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container brand"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span> DevStart <span class="tag">PROJETO DIDÁTICO</span></div>
+  </header>
+  <main class="container">
+    <div class="intro">
+      <p class="eyebrow">TRILHA 01 / FRONT-END</p>
+      <h1>Um passo de cada vez.</h1>
+      <p>Marque cada etapa concluída e acompanhe sua evolução.</p>
+    </div>
+    <section class="progress-card" aria-labelledby="progress-title">
+      <h2 id="progress-title">Seu progresso</h2>
+      <p id="summary" aria-live="polite">0 de 3 etapas</p>
+      <label for="progress" class="progress-label">Etapas concluídas</label>
+      <progress id="progress" max="3" value="0"></progress>
+      <p id="storage-note" role="status" hidden></p>
+    </section>
+    <section aria-labelledby="tasks-title" class="study">
+      <div class="section-top"><h2 id="tasks-title">Minha trilha</h2><button type="button" id="reset">Limpar progresso</button></div>
+      <!-- Cada checkbox tem um value único, usado para salvar seu estado. -->
+      <div class="tasks">
+        <label class="task"><input type="checkbox" value="html"><span><strong>01 · HTML semântico</strong><small>Estruture uma página com títulos, links e formulários.</small></span></label>
+        <label class="task"><input type="checkbox" value="css"><span><strong>02 · CSS responsivo</strong><small>Pratique Flexbox, Grid e adaptação de layout.</small></span></label>
+        <label class="task"><input type="checkbox" value="javascript"><span><strong>03 · JavaScript e DOM</strong><small>Manipule elementos e responda a eventos.</small></span></label>
+      </div>
+    </section>
+    <noscript>Ative o JavaScript para calcular e salvar seu progresso.</noscript>
+  </main>
+  <footer class="container">DevStart · Projeto do e-book Front-end do Zero · DIO Natty or Not</footer>
+</body>
+</html>
